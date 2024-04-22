@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -106,4 +109,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public Color GetColor()
+    {
+        return GetComponent<SpriteRenderer>().color;
+    }
+
+    public void SetColor(Color newColor)
+    {
+        GetComponent<SpriteRenderer>().color = newColor;
+    }
+
 }
+
