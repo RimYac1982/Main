@@ -19,4 +19,8 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu"); // Load the main menu scene
     }
+    public void GoToColorCustomizer()
+    {
+        SceneManager.LoadScene("CustomizerScene"); // Load the main menu scene
+    }
 }
