@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Safari-Drive-WebGL-Game.sln"
+    "dotnet.defaultSolution": "Safari-Drive-WebGL-Game.sln",
+    "git.ignoreLimitWarning": true
 }
