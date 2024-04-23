@@ -23,4 +23,8 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("CustomizerScene"); // Load the main menu scene
     }
+    public void GoToLeaderboard()
+    {
+        SceneManager.LoadScene("LeaderboardScene"); // Load the main menu scene
+    }
 }
