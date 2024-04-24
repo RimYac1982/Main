@@ -1,7 +1,5 @@
 using UnityEngine;
 using TMPro;
-
-// NOTE: Make sure to include the following namespace wherever you want to access Leaderboard Creator methods
 using Dan.Main;
 
 namespace LeaderboardCreatorDemo
@@ -13,11 +11,11 @@ namespace LeaderboardCreatorDemo
 
 // Make changes to this section according to how you're storing the player's score:
 // ------------------------------------------------------------
-        [SerializeField] private ExampleGame _exampleGame;
+      //  [SerializeField] private SafariGame _exampleGame;
         
-        private int Score => _exampleGame.Score;
+      //  private int Score => _exampleGame.Score;
 // ------------------------------------------------------------
-
+/*
         private void Start()
         {
             LoadEntries();
@@ -46,5 +44,7 @@ namespace LeaderboardCreatorDemo
                     LoadEntries();
             });
         }
+        */
     }
+    
 }
