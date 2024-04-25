@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
             Debug.LogError("SpriteRenderer component not found on the car GameObject!");
         }
     }
+    
 
     void FixedUpdate()
     {

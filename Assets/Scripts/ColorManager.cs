@@ -42,7 +42,6 @@ public class ColorManager : MonoBehaviour
         colors[0] = startColor.r;
         colors[1] = startColor.g;
         colors[2] = startColor.b;
-        Debug.Log("Value: " + colors[0]); 
     }
 
     public void ChangePlayerColor(int rgbIndex, float colorFloat)
@@ -56,6 +55,6 @@ public class ColorManager : MonoBehaviour
         // Set the new color for the player
         PlayerController playerScript = player.GetComponent<PlayerController>();
         playerScript.SetColor(newColor);
-        Debug.Log("Value: " + colors[0]); 
+
     }
 }
