@@ -33,6 +33,8 @@ public class ColorManager : MonoBehaviour
     }
 
     void Start()
+{
+    if (player != null)
     {
         // Get the PlayerController component from the player GameObject
         PlayerController playerScript = player.GetComponent<PlayerController>();
@@ -43,6 +45,12 @@ public class ColorManager : MonoBehaviour
         colors[1] = startColor.g;
         colors[2] = startColor.b;
     }
+    else
+    {
+        Debug.LogError("Player reference is not set in ColorManager!");
+    }
+}
+
 
     public void ChangePlayerColor(int rgbIndex, float colorFloat)
     {

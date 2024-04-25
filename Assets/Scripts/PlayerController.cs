@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Sprite[] sprites; // Array of sprites for animation
     private int spriteIndex = 0; // Index to track current sprite
     private bool scoringTriggered = false; // Flag to track if scoring trigger has been activated
-
+    
     void Awake()
     {
         carRigidbody = GetComponent<Rigidbody2D>(); // Assign the Rigidbody2D component
@@ -110,15 +110,28 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+
+   void Start()
+    {
+    spriteRenderer = GetComponent<SpriteRenderer>(); // Get the player's renderer component
+    ColorManager.Instance.ChangePlayerColor(0, spriteRenderer.material.color.r); // Initialize with default color
+    ColorManager.Instance.ChangePlayerColor(1, spriteRenderer.material.color.g);
+    ColorManager.Instance.ChangePlayerColor(2, spriteRenderer.material.color.b);
+    }
+
+    // Example method to get the player's color
     public Color GetColor()
     {
-        return GetComponent<SpriteRenderer>().color;
+        // Return the current color of the player
+        return GetComponent<Renderer>().material.color;
     }
 
+    // Example method to set the player's color
     public void SetColor(Color newColor)
     {
-        GetComponent<SpriteRenderer>().color = newColor;
+        // Set the new color for the player
+        GetComponent<Renderer>().material.color = newColor;
     }
-
 }
 
