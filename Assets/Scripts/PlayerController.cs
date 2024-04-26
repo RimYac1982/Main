@@ -112,13 +112,28 @@ public class PlayerController : MonoBehaviour
 
 
 
-   void Start()
+     void Start()
     {
-    spriteRenderer = GetComponent<SpriteRenderer>(); // Get the player's renderer component
-    ColorManager.Instance.ChangePlayerColor(0, spriteRenderer.material.color.r); // Initialize with default color
-    ColorManager.Instance.ChangePlayerColor(1, spriteRenderer.material.color.g);
-    ColorManager.Instance.ChangePlayerColor(2, spriteRenderer.material.color.b);
+        // Get the player's renderer component
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Initialize with default color or retrieve from PlayerPrefs
+        if (PlayerPrefs.HasKey("PlayerColorR") && PlayerPrefs.HasKey("PlayerColorG") && PlayerPrefs.HasKey("PlayerColorB"))
+        {
+            float r = PlayerPrefs.GetFloat("PlayerColorR");
+            float g = PlayerPrefs.GetFloat("PlayerColorG");
+            float b = PlayerPrefs.GetFloat("PlayerColorB");
+            Color savedColor = new Color(r, g, b);
+            SetColor(savedColor);
+        }
+        else
+        {
+            // If no saved color found, initialize with default color
+            Color defaultColor = spriteRenderer.material.color;
+            SetColor(defaultColor);
+        }
     }
+
 
     // Example method to get the player's color
     public Color GetColor()

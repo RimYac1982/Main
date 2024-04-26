@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColorManager : MonoBehaviour
 {
-    // Singleton instance
+     // Singleton instance
     public static ColorManager Instance;
 
     // Reference to the player GameObject
@@ -15,6 +15,7 @@ public class ColorManager : MonoBehaviour
 
     void Awake()
     {
+
         // Check if instance already exists
         if (Instance == null)
         {
@@ -52,6 +53,16 @@ public class ColorManager : MonoBehaviour
 }
 
 
+    // Save player color to PlayerPrefs
+    private void SavePlayerColor(Color color)
+    {
+        PlayerPrefs.SetFloat("PlayerColorR", color.r);
+        PlayerPrefs.SetFloat("PlayerColorG", color.g);
+        PlayerPrefs.SetFloat("PlayerColorB", color.b);
+        PlayerPrefs.Save(); // Save changes to PlayerPrefs
+    }
+
+
     public void ChangePlayerColor(int rgbIndex, float colorFloat)
     {
         // Update the corresponding color component
@@ -60,9 +71,11 @@ public class ColorManager : MonoBehaviour
         // Create a new color using the updated components
         Color newColor = new Color(colors[0], colors[1], colors[2]);
 
+        // Save the new color to PlayerPrefs
+        SavePlayerColor(newColor);
+
         // Set the new color for the player
         PlayerController playerScript = player.GetComponent<PlayerController>();
         playerScript.SetColor(newColor);
-
     }
 }
