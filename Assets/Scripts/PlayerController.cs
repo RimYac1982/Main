@@ -14,10 +14,19 @@ public class PlayerController : MonoBehaviour
     private int spriteIndex = 0; // Index to track current sprite
     private bool scoringTriggered = false; // Flag to track if scoring trigger has been activated
     
-    void Awake()
+     void Awake()
     {
-        carRigidbody = GetComponent<Rigidbody2D>(); // Assign the Rigidbody2D component
-        spriteRenderer = GetComponent<SpriteRenderer>(); // Assign the SpriteRenderer component
+        // Ensure only one instance of the player exists across scenes
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length > 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+
+        carRigidbody = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (carRigidbody == null)
         {
             Debug.LogError("Rigidbody2D component not found on the car GameObject!");
