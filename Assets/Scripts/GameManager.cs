@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
         quitButton.gameObject.SetActive(true);
         Time.timeScale = 0f; 
 
+        PlayerPrefs.SetInt("Score", score);
+
         if (timeRemaining <= 0f)
         {
             if (isPracticeScene)

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1512
     height: 831
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 37
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 18
+  controlID: 38
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 19
+  controlID: 39
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 869
     height: 463
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}
@@ -335,10 +335,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 24.996948}
     m_SelectedIDs: c4060000
     m_LastClickedID: 1732
-    m_ExpandedIDs: 000000000c06000000ca9a3b
+    m_ExpandedIDs: 000000000c0600008006000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,9 +506,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6cb0000
-      m_LastClickedID: 52182
-      m_ExpandedIDs: be2efeffb85cfeff8873feff8476feff1877feff7477feff0a78feff7478feff9c79feff647dfeffa67dfeff627ffeff727ffeff887ffeffa27ffeffc67ffeff5680feff9481feff1c82feff9e83feff8284fefff8c5000040c60000f2c60000dcca000024cb0000a6cb0000e0cb00003ecc0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 4242fcff2844fcff5447fcff2c4afcff324ffcff1650fcffbe50fcff8c52fcfff652fcff6053fcffc658fcff3257feffb083feff8284feff98b40000e0b4000092b50000e0ce000022cf0000bacf00004cd0000018d1000060d100007ed10000c0d10000f0d1000058d2000020dc0000ece700002ee80000c8e800005ae90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

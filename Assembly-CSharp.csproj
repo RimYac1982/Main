@@ -65,7 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/SliderScript.cs" />
-    <Compile Include="Assets/Scripts/LeaderboardManager.cs" />
     <Compile Include="Assets/Scripts/Spawner.cs" />
     <Compile Include="Assets/Scripts/ColorManager.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />

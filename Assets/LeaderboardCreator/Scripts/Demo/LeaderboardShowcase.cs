@@ -62,7 +62,7 @@ namespace Dan.Demo
             _pageInput.image.color = Color.white;
             _entriesToTakeInput.image.color = Color.white;
             
-            Leaderboards.DemoSceneLeaderboard.GetEntries(searchQuery, OnLeaderboardLoaded, ErrorCallback);
+            Leaderboards.SafariLeaderboard.GetEntries(searchQuery, OnLeaderboardLoaded, ErrorCallback);
             ToggleLoadingPanel(true);
         }
 
@@ -150,16 +150,19 @@ namespace Dan.Demo
         {
             InitializeComponents();
             Load();
+             // Retrieve the score from PlayerPrefs when the script starts
+            _playerScore = PlayerPrefs.GetInt("Score", 0);
+            _playerScoreText.text = $"Your score: {_playerScore}";
         }
 
         public void Submit()
         {
-            Leaderboards.DemoSceneLeaderboard.UploadNewEntry(_playerUsernameInput.text, _playerScore, Callback, ErrorCallback);
+            Leaderboards.SafariLeaderboard.UploadNewEntry(_playerUsernameInput.text, _playerScore, Callback, ErrorCallback);
         }
         
         public void DeleteEntry()
         {
-            Leaderboards.DemoSceneLeaderboard.DeleteEntry(Callback, ErrorCallback);
+            Leaderboards.SafariLeaderboard.DeleteEntry(Callback, ErrorCallback);
         }
 
         public void ResetPlayer()
@@ -169,7 +172,7 @@ namespace Dan.Demo
 
         public void GetPersonalEntry()
         {
-            Leaderboards.DemoSceneLeaderboard.GetPersonalEntry(OnPersonalEntryLoaded, ErrorCallback);
+            Leaderboards.SafariLeaderboard.GetPersonalEntry(OnPersonalEntryLoaded, ErrorCallback);
         }
 
         private void OnPersonalEntryLoaded(Entry entry)
