@@ -78,4 +78,12 @@ public class ColorManager : MonoBehaviour
         PlayerController playerScript = player.GetComponent<PlayerController>();
         playerScript.SetColor(newColor);
     }
+
+    public void ResetColor()
+    {
+        ChangePlayerColor(0, 1);
+        ChangePlayerColor(1, 1);
+        ChangePlayerColor(2, 1);
+
+    }
 }
