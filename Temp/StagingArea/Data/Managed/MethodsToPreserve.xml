@@ -1,0 +1,42 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="ColorManager">
+			<method name="ResetColor"/>
+		</type>
+		<type fullname="DiffcultySelector">
+			<method name="EasySelect"/>
+			<method name="HardSelect"/>
+			<method name="MediumSelect"/>
+		</type>
+		<type fullname="GameManager">
+			<method name="quitGame"/>
+			<method name="quitGame"/>
+			<method name="quitGame"/>
+			<method name="quitGame"/>
+			<method name="RestartGame"/>
+			<method name="RestartGame"/>
+			<method name="RestartGame"/>
+			<method name="RestartPractice"/>
+		</type>
+		<type fullname="MenuController">
+			<method name="GoToColorCustomizer"/>
+			<method name="GoToLeaderboard"/>
+			<method name="GoToMainMenu"/>
+			<method name="GoToMainMenu"/>
+			<method name="PlayGame"/>
+			<method name="PracticeGame"/>
+		</type>
+	</assembly>
+	<assembly fullname="Dan" ignoreIfMissing="1">
+		<type fullname="Dan.Demo.LeaderboardShowcase">
+			<method name="ChangePageBy"/>
+			<method name="ChangePageBy"/>
+			<method name="DeleteEntry"/>
+			<method name="GetPersonalEntry"/>
+			<method name="Load"/>
+			<method name="MovePersonalEntryMenu"/>
+			<method name="ResetPlayer"/>
+			<method name="Submit"/>
+		</type>
+	</assembly>
+</linker>

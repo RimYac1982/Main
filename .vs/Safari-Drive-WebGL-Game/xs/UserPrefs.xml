@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{56C476E9-64B3-D0F0-BB59-1A43F429CB3D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BackgroundScoller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DiffcultySelector.cs">
     <Files>
       <File FileName="Assets/Scripts/BackgroundScoller.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/MenuController.cs" Line="21" Column="41" />
+      <File FileName="Assets/Scripts/DiffcultySelector.cs" Line="18" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +11,7 @@
           <Node name="Safari-Drive-WebGL-Game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="BackgroundScoller.cs" selected="True" />
+                <Node name="DiffcultySelector.cs" selected="True" />
               </Node>
             </Node>
           </Node>

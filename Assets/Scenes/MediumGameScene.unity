@@ -1510,8 +1510,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a07a34eee6b14012903053f973e1281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3432696869502999716, guid: f9f2d5260d97a45fa976f144d65ae43a, type: 3}
-  spawnRate: 15
+  prefab: {fileID: 3432696869502999716, guid: a49c49d6bdad9483784b2787e90eba31, type: 3}
+  spawnRate: 5
   minHeight: -2.44
   maxHeight: -0.271
 --- !u!4 &1450517333
@@ -1939,7 +1939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a07a34eee6b14012903053f973e1281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2751249636800840945, guid: 4ce80be602b544e10ba94ebb8728d45a, type: 3}
+  prefab: {fileID: 2751249636800840945, guid: 5e4e16a77693d47778d85fed99a8fb9c, type: 3}
   spawnRate: 15
   minHeight: -2.44
   maxHeight: -0.271

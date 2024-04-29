@@ -16,9 +16,11 @@ public class DiffcultySelector : MonoBehaviour
     public void MediumSelect()
     {
         PlayerPrefs.SetInt("Difficulty", 2);
+        Debug.Log("Medium");
     }
     public void HardSelect()
     {
         PlayerPrefs.SetInt("Difficulty", 3);
+        Debug.Log("Hard");
     }
 }
