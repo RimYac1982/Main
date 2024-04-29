@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LeaderboardScene.unity
     guid: 43c78bb36f48c4b08b6830061005b1c0
+  - enabled: 1
+    path: Assets/Scenes/MediumGameScene.unity
+    guid: 5e9ec1d66f0624787b089d168cf4f531
+  - enabled: 1
+    path: Assets/Scenes/HardGameScene.unity
+    guid: 5d1406978688e45019b8ffdcf5505274
   m_configObjects: {}
