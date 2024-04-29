@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BackgroundScroller : MonoBehaviour
 {
-    [Range(0f, 2f)]
+    [Range(0f, 6f)]
     public float scrollSpeed = 0.5f;
 
     private float offset;

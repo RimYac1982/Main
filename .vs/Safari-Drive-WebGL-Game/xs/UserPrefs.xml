@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{56C476E9-64B3-D0F0-BB59-1A43F429CB3D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BackgroundScoller.cs">
+    <Files>
+      <File FileName="Assets/Scripts/BackgroundScoller.cs" Line="24" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Safari-Drive-WebGL-Game" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="BackgroundScoller.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="757f2c41-3f2e-4f98-9a53-4322f62f5e7f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
