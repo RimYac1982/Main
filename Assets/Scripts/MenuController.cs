@@ -5,8 +5,23 @@ public class MenuController : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene"); // Load the game scene
-        Time.timeScale = 1f; // Ensure time scale is set to normal
+        if (PlayerPrefs.GetInt("Difficulty") == 1)
+        {
+            //SceneManager.LoadScene("EasyGameScene"); // Load the game scene
+            SceneManager.LoadScene("GameScene"); // Load the game scene
+            Time.timeScale = 1f; // Ensure time scale is set to normal
+        }
+        if (PlayerPrefs.GetInt("Difficulty") == 2)
+        {
+            SceneManager.LoadScene("MediumGameScene"); // Load the game scene
+            Time.timeScale = 1f; // Ensure time scale is set to normal
+        }
+        if (PlayerPrefs.GetInt("Difficulty") == 3)
+        {
+            SceneManager.LoadScene("HardGameScene"); // Load the game scene
+            Time.timeScale = 1f; // Ensure time scale is set to normal
+        }
+        
     }
 
     public void PracticeGame()
