@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -807,7 +807,7 @@ MonoBehaviour:
   minYPos: -2.44
   maxYPos: -0.271
   sprites:
-  - {fileID: -1436819504, guid: 7e6924b9f69b34b5798a9295b9994e67, type: 3}
+  - {fileID: -994864741, guid: 1d8c4003f47e04a08a505e6e3d7217d4, type: 3}
 --- !u!61 &723144682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -844,8 +844,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.233248, y: 4.93}
-    newSize: {x: 0.96, y: 0.96}
+    oldSize: {x: 10.67042, y: 5.33}
+    newSize: {x: 10.67042, y: 5.33}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -921,12 +921,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1436819504, guid: 7e6924b9f69b34b5798a9295b9994e67, type: 3}
+  m_Sprite: {fileID: -994864741, guid: 1d8c4003f47e04a08a505e6e3d7217d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.96, y: 0.96}
+  m_Size: {x: 10.67042, y: 5.33}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -942,7 +942,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.2, y: -0.3, z: 0}
-  m_LocalScale: {x: 0.6556902, y: 0.6830872, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1128,8 +1128,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 0.0011368}
-  m_SizeDelta: {x: 800, y: 388.23}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1129471825
 MonoBehaviour:
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 45dd14f8219b743ed98ce035c2457655, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f52e544c4132b4dfb9f076822921ccf4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

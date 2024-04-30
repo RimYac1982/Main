@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7e6924b9f69b34b5798a9295b9994e67
+guid: 1d8c4003f47e04a08a505e6e3d7217d4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,10 +113,10 @@ TextureImporter:
       name: Sprite sheet  white car_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 6
-        width: 923
-        height: 493
+        x: 0
+        y: 0
+        width: 1066.6666
+        height: 533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dd7758115d0e483fb9b4392600079ed
-      internalID: -1436819504
+      spriteID: d99e9ed978ecf4377a1eec9e6533eaab
+      internalID: -994864741
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Sprite sheet  white car_1
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 1
-        width: 931
-        height: 531
+        x: 1066
+        y: 0
+        width: 1066.6666
+        height: 533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de5cdd3e2b81646c3aeaaf34396986be
-      internalID: -1472042817
+      spriteID: f83e0433717e043b4aad6077a135661a
+      internalID: 1556059898
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Sprite sheet  white car_2
       rect:
         serializedVersion: 2
-        x: 2198
-        y: 12
-        width: 937
-        height: 514
+        x: 2132
+        y: 0
+        width: 1066.6666
+        height: 533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18156ababeb8345d4a3416f4b6b0c74e
-      internalID: -1728020503
+      spriteID: c5cc223b16c2a43dda524daab28e6152
+      internalID: -1112008865
       vertices: []
       indices: 
       edges: []
@@ -175,7 +175,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2c0c5de37d4824092980017ccfdcc8ed
+    spriteID: 1b8455feb7365409aa6a87f675343e37
     internalID: 0
     vertices: []
     indices: 
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite sheet  white car_0: -1436819504
-      Sprite sheet  white car_1: -1472042817
-      Sprite sheet  white car_2: -1728020503
+      Sprite sheet  white car_0: -994864741
+      Sprite sheet  white car_1: 1556059898
+      Sprite sheet  white car_2: -1112008865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

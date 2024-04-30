@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2813543191784461257}
   - component: {fileID: 4401260503474596076}
   - component: {fileID: 1426372018258260512}
-  - component: {fileID: 506037797407104694}
   m_Layer: 0
   m_Name: elephant (1)
   m_TagString: Obstacle
@@ -181,20 +180,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &506037797407104694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823764835897914492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e79e1df7e37545a8a0c23f36705fd62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: -313892748, guid: 01704be98615840a7aed4967b2b649ea, type: 3}
 --- !u!1 &4309059835824529164
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +347,6 @@ GameObject:
   - component: {fileID: 5719231348295140511}
   - component: {fileID: 3452600422738663814}
   - component: {fileID: 7706816205293393287}
-  - component: {fileID: 333263032552896500}
   m_Layer: 0
   m_Name: elephant
   m_TagString: Obstacle
@@ -378,13 +362,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8186156395491283423}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.88, y: -0.45, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.783, y: -0.438, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7494002648870445652}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &613008898713477822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -426,7 +410,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f7329ffdd837341d5bf574db18f22f20, type: 3}
+  m_Sprite: {fileID: -833279467, guid: d2f697dbd95f242169222d0ebdd16458, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -473,7 +457,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 1.28}
+    oldSize: {x: 2.3333333, y: 1.28}
     newSize: {x: 2.56, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -519,7 +503,7 @@ Animator:
   m_GameObject: {fileID: 8186156395491283423}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b66151c99b824823b2737bb25618d9e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 662e7cdb168884556913654fafef7529, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -530,20 +514,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &333263032552896500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8186156395491283423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e79e1df7e37545a8a0c23f36705fd62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: -313892748, guid: 01704be98615840a7aed4967b2b649ea, type: 3}
 --- !u!1 &8343099621481094423
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +526,7 @@ GameObject:
   - component: {fileID: 4534581676301734343}
   - component: {fileID: -2256374473591024332}
   m_Layer: 0
-  m_Name: PracticeObstecles
+  m_Name: PracticeElephants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
