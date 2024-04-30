@@ -916,7 +916,7 @@ MonoBehaviour:
   GameOverImage: {fileID: 406357061}
   FinalScore: {fileID: 1524111496}
   countdownText: {fileID: 1348778221}
-  gameDuration: 300
+  gameDuration: 200
   isPracticeScene: 0
 --- !u!1 &1021294327
 GameObject:
@@ -1114,7 +1114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1068342295, guid: ac684661de1604f7bb5d30989f406f52, type: 3}
+  m_Sprite: {fileID: -994864741, guid: 1d8c4003f47e04a08a505e6e3d7217d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1135,7 +1135,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.153, y: -2.075, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.17, y: 0.17, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1199,18 +1199,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000009536743, y: 0.01064378}
+  m_Offset: {x: -0.12393665, y: -0.08649588}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 1.28}
+    oldSize: {x: 10.67042, y: 5.33}
     newSize: {x: 0.96, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8940718, y: 0.85440814}
+  m_Size: {x: 8.586679, y: 4.421789}
   m_EdgeRadius: 0
 --- !u!114 &1060615691
 MonoBehaviour:
@@ -1239,7 +1239,7 @@ Animator:
   m_GameObject: {fileID: 1060615685}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 89c9c5df5115b4453a38d49aa61081e4, type: 2}
+  m_Controller: {fileID: 9100000, guid: d7ecd9c50609142eead538f82bd43847, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1278,8 +1278,8 @@ Transform:
   m_GameObject: {fileID: 1118381274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 21.673218, y: 10.325866, z: 1.0216379}
+  m_LocalPosition: {x: 0.3829, y: 0, z: 0}
+  m_LocalScale: {x: 20.908237, y: 10.325866, z: 1.0216379}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1317,7 +1317,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2891c886ad2c64853bc30335f3170627, type: 2}
+  - {fileID: 2100000, guid: 8261423feab974b4f82babe6450ea12c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
