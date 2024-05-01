@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite[] sprites; // Array of sprites for animation
     private int spriteIndex = 0; // Index to track current sprite
+    private bool canMoveLeft = true; // Flag to track if the player can move left
+    private bool canMoveRight = true; // Flag to track if the player can move right
     private bool scoringTriggered = false; // Flag to track if scoring trigger has been activated
     
     void Awake()
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         ApplySteering();
     }
-
+    
     void ApplySteering()
     {
         // Handle arrow key controls for movement
@@ -42,16 +44,21 @@ public class PlayerController : MonoBehaviour
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * moveSpeed;
 
-        carRigidbody.velocity = movement;
+        if (canMoveLeft || moveHorizontal > 0) // Only move left if the flag is true or the player is moving right
+        {
+            carRigidbody.velocity = movement;
+        }
+        else
+        {
+            carRigidbody.velocity = Vector2.up * moveVertical * moveSpeed; // Only allow vertical movement
+        }
 
         // Limit the car's position along the Y-axis within a specified range
         Vector2 clampedPosition = transform.position;
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, minYPos, maxYPos);
         transform.position = clampedPosition;
-
-        // Update sprite animation
-        UpdateSpriteAnimation();
     }
+
 
 
 
@@ -86,6 +93,14 @@ public class PlayerController : MonoBehaviour
                 Debug.LogError("GameManager not found in the scene!");
             }
         }
+        else if (other.gameObject.CompareTag("LeftWall"))
+        {
+            canMoveLeft = false; // Set the flag to false when player collides with the wall
+        }
+        else if (other.gameObject.CompareTag("RightWall"))
+        {
+            canMoveRight = false; // Set the flag to false when player collides with the wall
+        }
         else if (other.gameObject.CompareTag("Scoring") && !scoringTriggered)
         {
             scoringTriggered = true; // Set the flag to true to indicate scoring trigger has been activated
@@ -104,7 +119,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Scoring"))
+        if (other.gameObject.CompareTag("LeftWall"))
+        {
+            canMoveLeft = true; // Reset the flag when player exits the wall
+        }
+        else if (other.gameObject.CompareTag("RightWall"))
+        {
+            canMoveRight = true; // Reset the flag when player exits the wall
+        }
+        else if (other.gameObject.CompareTag("Scoring"))
         {
             scoringTriggered = false; // Reset the scoring trigger flag when the player moves away from the scoring trigger
         }

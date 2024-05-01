@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 3452600422738663814}
   - component: {fileID: 7706816205293393287}
   m_Layer: 0
-  m_Name: elephant
+  m_Name: lion
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

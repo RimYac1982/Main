@@ -11,13 +11,29 @@ public class BackgroundScroller : MonoBehaviour
 
     void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        // Check if the GameObject has a Renderer component and a Material assigned to it
+        Renderer renderer = GetComponent<Renderer>();
+        if (renderer != null && renderer.material != null)
+        {
+            mat = renderer.material;
+        }
+        else
+        {
+            
+        }
     }
 
     void Update()
     {
-        offset += (Time.deltaTime * scrollSpeed) / 10f;
-        mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+        if (mat != null) // Check if the 'mat' variable is not null before using it
+        {
+            offset += (Time.deltaTime * scrollSpeed) / 10f;
+            mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+        }
+        else
+        {
+          
+        }
    
     }
 }
