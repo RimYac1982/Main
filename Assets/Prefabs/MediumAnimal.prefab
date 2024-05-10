@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.041084766, y: 0.020442128}
+  m_Offset: {x: -0.048, y: -0.0053}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -131,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9362004, y: 1.0819724}
+  m_Size: {x: 1.45, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &526878006021648069
 Rigidbody2D:
@@ -576,7 +576,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.040719807, y: 0.0017219186}
+  m_Offset: {x: -0.048, y: -0.0053}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -587,7 +587,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.931753, y: 1.1516119}
+  m_Size: {x: 1.45, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &4513032618757329284
 Rigidbody2D:
@@ -867,7 +867,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0073724985, y: -0.0052743554}
+  m_Offset: {x: -0.048, y: -0.0053}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -878,7 +878,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.876246, y: 1.2694513}
+  m_Size: {x: 1.45, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &978023659295612933
 Rigidbody2D:
@@ -1217,7 +1217,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019210637, y: -0.0097049475}
+  m_Offset: {x: -0.048, y: -0.0053}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1228,7 +1228,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9294139, y: 1.2605901}
+  m_Size: {x: 1.45, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &4003200977781531495
 Rigidbody2D:
